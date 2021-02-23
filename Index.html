@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+	<div class="container">
+        <div id="about">
+            <a href="https://www.facebook.com/eLLa1105">
+            <img src="/img/about.png" alt="">
+            </a>
+        </div>
+		<div id="logo">
+			<img src="https://freepngimg.com/thumb/pokemon/2-2-pokemon-png-pic.png" alt="">
+        </div>
+        
+		<div id="search">
+			<input id="find" type="search" placeholder="Search">
+			<button id="searchBtn">
+                <img id="openpokemon" src="./img/enterpokeball.png" alt="">
+            </button>
+        </div>
+        <div id="showError">
+            <div class="speech">
+                <h2>OH NOOO! <br> NO POKEMON FOUND! :(
+                </h2>
+            </div>
+             <img src="./img/nopokemon.png" alt="Error display">
+        </div>
+  
+        <div id="flip-card">
+            <img id="pokemonDP" src="">
+            <div class="flip-card-inner">  
+                <div id="backBase">
+                    &gt;
+                </div> 
+		        <div id="display">
+                    <h1 id="name"></h1>        
+                    <div class="aboutPokemon">
+                    <ul class="ulLeft">
+                            <li>National no.</li>
+                            <li>Type</li>
+                            <!-- <li>Species</li>  -->
+                            <li>Height</li>
+                            <li>Weight</li>
+                            <li>Abilities</li>
+                            <li id="hiddenstyle">Hidden ability</li>
+                        </ul>
+                    <ul class="ulRight">
+                        <li id="pokemonId"></li>
+                        <li>a
+                            <div id="type"></div>
+                        </li>
+                        <li id="species"></li>
+                        <li id="height"></li>
+                        <li id="weight"></li>
+                        <li id="abilities"></li>
+                        <li id="hiddenAb"></li>
+                    </ul>
+                </div>
+
+                <div class="flip-card-back">
+                    <div id="baseStats">
+                        BASE STATS
+                    </div>
+                    <div class="ulLeft">
+                        <li>HP </li>
+                        <li>ATTACK</li>
+                        <li>DEFENSE</li>
+                        <li>SPECIAL ATTACK</li>
+                        <li>SPECIAL DEFENSE</li>
+                        <li>SPEED</li>
+                    </div>
+                    <div class="ulRight">
+                    <div class="level" id="hp"></div>
+                    <div class="level" id="att"></div>
+                    <div class="level" id="def"></div>
+                    <div class="level" id="sAtt"></div>
+                    <div class="level" id="sDef"></div>
+                    <div class="level" id="speed"></div>
+                </div>
+            </div>          
+        </div>
+
+
+        <img id="bgImg" src="/img/pngwing.com (1).png" alt="">
+    </div>
+	
+<script src="./script.js"></script>
+</body>
+</html>
+
