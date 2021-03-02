@@ -65,15 +65,16 @@
     });
    
     input.addEventListener("keyup", function(event) {
+        this.value = this.value.toLowerCase();
         if (event.keyCode === 13) {
           event.preventDefault();
           document.getElementById("searchBtn").click();
         }
       });
+
+   
+
  
-    input.addEventListener("search", function(event){
-        showPokemon.style.display = "none";
-    })
 
     function btnSubmit(txt) {
         if (txt.value != '') {
