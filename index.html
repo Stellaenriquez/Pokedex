@@ -28,9 +28,9 @@
         </div>
         
 		<div id="search">
-			<input id="find" type="search" placeholder="Name or number">
-			<button id="searchBtn">
-                <img id="openpokemon" src="./img/enterpokeball.png" alt="">
+			<input id="find" type="search" placeholder="Name or number" onkeyup="btnSubmit(this)" onkeyup="this.value = this.value.toLowerCase()">
+			<button id="searchBtn" disabled >
+                <img id="openpokemon" src="./img/enterpokeball.png" alt="" >
             </button>
         </div>
         <div id="showError">

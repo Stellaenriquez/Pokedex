@@ -26,9 +26,6 @@
 		    .then(function (pokemon) {
                 if (pokemon) {
                     showPokemon.style.display="block";
-                        setTimeout(function(){
-                        showPokemon.style.display="none";
-                        },20000)
                     Pname.innerHTML= pokemon.name;
                     dp.setAttribute('src', pokemon.sprites.other.dream_world.front_default)
                     Ptype.innerHTML = `${pokemon.types[0].type.name}`;
@@ -48,9 +45,6 @@
 			}).catch(function(){
                 if(response.status = 404 || response.statusText == 'Not found') {
                     document.getElementById('showError').style.display = "block";
-                    setTimeout(function(){
-                        document.getElementById('showError').style.display ="none";
-                    },2000)
                 } 
             })
         })
@@ -66,8 +60,8 @@
         getData(input.value);
         document.getElementById('openpokemon').src='./img/pokeball.png'
         setTimeout(function(){
-        document.getElementById('openpokemon').src='./img/enterpokeball.png'
-        },1000) 
+            document.getElementById('openpokemon').src='./img/enterpokeball.png'
+            },1000) 
     });
    
     input.addEventListener("keyup", function(event) {
@@ -81,11 +75,16 @@
         showPokemon.style.display = "none";
     })
 
-    // input.getAttribute('')
+    function btnSubmit(txt) {
+        if (txt.value != '') {
+            searchBtn.disabled = false;
+            searchBtn.classList.add("searchBtnBW")
+        }
+        else {
+            searchBtn.disabled = true;
+            searchBtn.classList.remove("searchBtnBW")
+        }
+    }    
+    
 
-    // input.addEventListener('keydown', function(event){
-    //     const key = event.key;
-    //     if (key === "Backspace" || key === "Delete") {
-    //         bg.style.display ="block"
-    //     }
-    // })
+

@@ -2,8 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: 0px;
+    outline: none;
+    box-shadow: none;
 }
 body {
+    background-color: rgb(232, 149, 40);
 }
 .container {
     height: 100vh;
@@ -37,6 +40,7 @@ body {
     -webkit-animation: gg 15s;
     -webkit-animation-fill-mode: forwards;
     } 
+ 
 
 @-webkit-keyframes gg {
         /* 0% {
@@ -51,6 +55,7 @@ body {
         }
     } 
 
+
 .main img {
     width: 50%;
     height: 20%;
@@ -60,11 +65,9 @@ body {
 
 .main-content {
     height: 800px;
-    width: 800px;
+    width: 600px;
     /* background-color: orangered; */
     display: flex;
-
- 
 }
 
 .main-content img {
@@ -128,6 +131,9 @@ input {
     cursor: pointer;
     background-color: initial;
     border-style: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);  
+    
 }
 #searchBtn:hover {
     transform: translateY(-20px);
@@ -136,6 +142,11 @@ input {
     height: 70px;
     width: 70px;
 }
+
+.searchBtnBW{
+    filter: none !important; 
+}
+
 #display {
     height: 800px;
     width: 700px;
@@ -169,6 +180,9 @@ input {
    /* background-color: thistle;
     */
 }
+
+
+
 .flip-card-inner {
     position: relative;
     width: 800px;
@@ -537,7 +551,6 @@ input {
     .main-content {
         height: 300px;
         width: 900px;
-
     }
 
     .main-content img {
