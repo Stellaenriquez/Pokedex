@@ -72,10 +72,13 @@
         }
       });
 
+    input.addEventListener('search', function(event){
+        searchBtn.disabled = true;
+        searchBtn.classList.add("searchBtnBW")
+        showPokemon.style.display = "none";
+        error.style.display = "none";
+    })
    
-
- 
-
     function btnSubmit(txt) {
         if (txt.value != '') {
             searchBtn.disabled = false;

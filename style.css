@@ -4,7 +4,9 @@
     box-sizing: 0px;
     outline: none;
     box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
 body {
     background-color: rgb(232, 149, 40);
 }
@@ -133,8 +135,18 @@ input {
     border-style: none;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);  
-    
 }
+
+#searchBtn:active, 
+#searchBtn img:active
+#searchBtn:focus,
+#searchBtn img:focus, 
+#searchBtn:focus:active,
+#searchBtn img:focus:active {
+    outline: none;
+    box-shadow: none;
+}
+
 #searchBtn:hover {
     transform: translateY(-20px);
 }
@@ -158,10 +170,6 @@ input {
     align-items: center;
     position: relative;
     border-radius: 20px;
-   /* background-color: transparent;
-    */
-   /* background-color: teal;
-    */
 }
 #flip-card {
     background-color: transparent;
@@ -177,10 +185,7 @@ input {
     cursor: pointer;
     align-items: center;
     display: none;
-   /* background-color: thistle;
-    */
 }
-
 
 
 .flip-card-inner {
@@ -199,8 +204,10 @@ input {
     justify-content: center;
     border-radius: 20px;
 }
+
 #flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+    
 }
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -305,6 +312,7 @@ input {
     justify-content: flex-start;
     align-items: center;
 }
+
 .ulLeft {
     list-style: none;
     font-size: 40px;
@@ -316,6 +324,7 @@ input {
     text-align: right;
     margin-left: -30px;
 }
+
 .ulRight {
     list-style: none;
     font-size: 40px;
@@ -328,6 +337,7 @@ input {
     padding: 10px;
     border-radius: 10px;
 }
+
 .ulLeft li {
    /* border-top: 1px solid rgba(0, 0, 0, 0.523);
     */
@@ -621,6 +631,15 @@ input {
         background-color: initial;
         border-style: none;
    }
+   #searchBtn:active, 
+#searchBtn img:active
+#searchBtn:focus,
+#searchBtn img:focus, 
+#searchBtn:focus:active,
+#searchBtn img:focus:active {
+    outline: none;
+    box-shadow: none;
+}
     #searchBtn:hover {
         transform: translateY(-20px);
    }
@@ -663,6 +682,7 @@ input {
         transition: transform 3s;
         display: none;
    }
+
     .flip-card-inner {
         position: absolute;
         width: 450px;
